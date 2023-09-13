@@ -1,7 +1,8 @@
+
 #include "main.h"
 /**
  * main - print _putchar
- *author yonas negese
+ * is written by mbah
  * Return: 0
  */
 
