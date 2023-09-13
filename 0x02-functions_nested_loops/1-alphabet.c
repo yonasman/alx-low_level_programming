@@ -7,8 +7,11 @@
  */
 void print_alphabet(void)
 {
-char apl;
-for (alp = 'a', alp <= 'z', alp++);
-_putchar(alp);
-_putchar('\n');
+	char le;
+
+	for (le = 'a'; le <= 'z'; le++)
+		_putchar(le);
+
+	_putchar('\n');
 }
+
