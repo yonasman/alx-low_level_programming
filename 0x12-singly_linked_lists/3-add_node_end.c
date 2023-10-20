@@ -9,17 +9,17 @@ int len(const char *str);
  */
 list_t *new_node(const char *str)
 {
-        list_t *end_node;
+	list_t *end_node;
 
-        end_node = malloc(sizeof(list_t));
-        if (end_node == NULL)
-        {
-                return (NULL);
-        }
-        end_node->str = strdup(str);
-        end_node->len = len(str);
-        end_node->next = NULL;
-        return (end_node);
+	end_node = malloc(sizeof(list_t));
+	if (end_node == NULL)
+	{
+		return (NULL);
+	}
+	end_node->str = strdup(str);
+	end_node->len = len(str);
+	end_node->next = NULL;
+	return (end_node);
 }
 /**
  *add_node_end - a function that add node at the end
