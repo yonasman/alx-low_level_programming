@@ -21,10 +21,15 @@ unsigned int binary_to_uint(const char *b)
 		{
 			result += 1 << (length - i - 1); /*left shifts the given binary number*/
 		}
-		else if ((b[i] != '0' || b[i] != '1') && b == NULL)
-		{
+	}
+	for (i = 0; i < length; i++)
+	{
+		if ((b[i] != '0' && b[i] != '1'))
 			return (0);
-		}
+	}
+	if (!b)
+	{
+		return (0);
 	}
 
 	return (result);
