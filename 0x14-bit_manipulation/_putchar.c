@@ -4,9 +4,9 @@
  *_putchar - a function that brings a char to stdout
  *@c: a char to be printed
  *
- * Return: nothing
+ * Return: a char
  */
-void _putchar(char c)
+int _putchar(char c)
 {
 	return (write(1, &c, 1));
 }
